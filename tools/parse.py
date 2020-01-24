@@ -8,4 +8,6 @@ class Parse:
         return self.parser(self.path)
 
     def __exit__(self, exc_type, exc_val, exc_tb):
-        pass
+        if exc_tb:
+            print('Ошибка:', exc_val)
+            return True
