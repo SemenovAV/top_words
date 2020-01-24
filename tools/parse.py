@@ -3,7 +3,6 @@ class Parse:
         self.path = file_path
         self.type = file_path.split('.')[-1]
         self.parser = parser
-        print(self.path, self.type)
 
     def __enter__(self):
         return self.parser(self.path)
