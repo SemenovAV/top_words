@@ -1,5 +1,5 @@
 def top_words(string, quantity=10, min_length=6):
-    words = string.split(' ')
+    words = string.lower().split(' ')
     result = {}
     for word in words:
         result.setdefault(word, 0)
